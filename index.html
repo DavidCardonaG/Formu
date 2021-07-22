@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" type="text/css" href="./style.css/styles.css">
+</head>
+<body>
+    <main>
+          
+            <h1 id="title">FORMULARIO</h1>
+            <p id="description">Gracias por llenar el formulario, nos ayuda a ser mejores</p>
+            <form id="survey-form" value="form" >
+              <div class="form-group">
+              <label id="name-label">Nombre</label>
+              <input id="name" type=" nombre" value="name" placeholder="Escribe tu nombre" required><br><br>
+              </div>
+           <div>
+             <label id="apellido-label">Apellido</label>
+             <input id="apellido" type="apellido" value="apellido"
+             placeholder= "Escribe tus apellidos" required><br><br>
+              </div>
+              <div>
+                <label id="email-label">Email</label>
+                <input id="email" type="email" value="email" placeholder="Escribe tu email" required><br><br>
+              </div>
+              <div>
+                <label id="number-label">Edad(Opcional)</label>
+                <input id="number" type="number" value="age" placeholder="Escribe tu edad" min="10" max="99"><br><br>
+              </div>
+              <div class="form-group">
+                <p>Cual de estas opciones define mejor tu situación actual:</p>
+                <select id="dropdown" class="form-control" required>
+                  <option disable select value>
+                    Selecciona una opción</option>
+                  <option value="Trabajador">Trabajador</option>
+                  <option value="Estudiante">Estudiante</option>
+                  <option value="Independiente">Independiente</option>
+                  <option value="Pensionado">Pensionado</option>
+                  <option value="Otra">Otra</option>
+                </select>
+                  </div>
+                
+          <div>
+            <p>Recomendarias nuestros productos a tus amigos y familiares?</p>
+            <label id="rd">
+              <input name="rd" type="radio" class="input-radio" value="of course">Por supuesto</input>
+            </label>
+              <label id="rd">
+                <input name="rd" type="radio" class="input-radio" value="may be">Tal vez si</input>
+              </label>
+          <label id="rd">
+            <input name="rd" type="radio" class="input-radio" value="maybe not">
+            Tal vez no</label>
+          </label>
+        <label id="rd">
+          <input name="rd" type="radio" class="input-radio" value="definitely not">
+          Definitivamente no</label>
+        </div>
+        <div>
+          <p> Que es lo que más le gusta de nuestro sitio web?</p>
+          <select id="dropdown" class="form-control"required>
+            <option disable select value>Selecciona una opción</option>
+            <option value="Productos">Los productos</option>
+            <option value="Atención">La atención al usuario</option>
+            <option value="Promociones">Las promociones</option>
+            <option value="Interfaz">Interfaz gráfica</option>
+            <option value="compra">Compra segura y rápida</option>
+          </select>
+        </div>
+        
+        <div>
+          <p>Que le gustaria que mejoraramos?</p>
+          <label>
+            <input name="mejoras" type="checkbox" value="1">
+            Más productos</label>
+          <label>
+            <input name="mejoras" type="checkbox" value="2">
+            Diferentes métodos de pago</label>
+            <label>
+              <input name="mejoras" type="checkbox" value="3">
+              Envios más rápidos</label>
+            <label>
+              <input name="mejoras" type="checkbox" value="3">
+              Precio en diferentes monedas locales</label>
+            <label>
+              <input name="mejoras" type="checkbox" value="4">
+              Diseño de la web</label>
+          <label>
+            <input name="mejoras" type="checkbox" value="5">
+            Implementación de boot</label>
+        </div>
+        <div>
+          <p>Comentarios o sugerencias?</p>
+          <textarea id="comentarios" placeholder="Escribe tu comentario o sugerencia acá"></textarea>
+        </div>
+        <div>
+          <button type="submit" id="submit" class="submit-button">
+            ENVIAR</button>
+        </div>
+        </form>
+        </div>
+        </main>
+</body>
+</html>
